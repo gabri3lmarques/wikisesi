@@ -1,9 +1,9 @@
-document.querySelector(".tem-sub").addEventListener("mouseover", function(){
-  document.querySelector(".sub-menu").style.opacity = 1;
-});
-document.querySelector(".tem-sub").addEventListener("mouseout", function(){
-  document.querySelector(".sub-menu").style.opacity = 0;
-});
+// document.querySelector(".tem-sub").addEventListener("mouseover", function(){
+//   document.querySelector(".sub-menu").style.opacity = 1;
+// });
+// document.querySelector(".tem-sub").addEventListener("mouseout", function(){
+//   document.querySelector(".sub-menu").style.opacity = 0;
+// });
 
 document.querySelector(".botao-busca").addEventListener("click", function(){
   y = document.querySelectorAll(".hide");
