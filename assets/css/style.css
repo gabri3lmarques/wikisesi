@@ -450,6 +450,7 @@ ul {
   padding-left: 0;
   padding: 30px;
   border: 3px solid #6161ab;
+  border-radius: 10px;
 }
 ul li {
   margin-top: 15px;
@@ -460,6 +461,7 @@ span.li-item {
 } 
 .caixa-destaque {
   margin-top: 20px;
+  border: 3px solid #6161ab;
   border-radius: 10px;
   filter: drop-shadow(0 0 7px rgba(0,0,0,0.12));
   background-color: #c5c5c5;
