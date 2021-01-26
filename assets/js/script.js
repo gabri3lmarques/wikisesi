@@ -22,7 +22,7 @@ function myFunction() {
       for (var c = 0; c < y.length; c++) {
         y[c].style.height = "64px";
       };
-      this.style.height = "200px";
+      this.style.height = this.lastChild.previousSibling.offsetHeight + 64 + "px";
     });
     
   }

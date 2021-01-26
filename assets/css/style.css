@@ -35,8 +35,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 p {
-  color: #9595ac;
+  color: #666;
   font-size: 16px;
+  margin-top: 20px;
 }
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
@@ -275,18 +276,18 @@ h3.tema  {
 }
 .texto p {
   font-size: 16px;
-  color: #9595ac;
+  color: #666;
   font-weight: 400;
   font-family: "Open Sans";
 }
-.texto p a {
+a {
   color: #177eff;
   font-weight: 600;
   cursor: pointer;
   border-bottom: 1px dashed;
   transition: 300ms;
 }
-.texto p a:hover {
+a:hover {
   color: #8cad4a;
 }
 .painel {
@@ -443,20 +444,35 @@ button.tema.rosa:hover {
   background-repeat: no-repeat;
   background-position: left center;
 }
+ul {
+  list-style-type: none;
+  color: #666;
+  padding-left: 0;
+  padding: 30px;
+  border: 3px solid #6161ab;
+}
+ul li {
+  margin-top: 15px;
+}
+span.li-item {
+  color: #6161ab;
+  font-weight: bold;
+} 
 .caixa-destaque {
-  margin-top: 100px;
-  height: 122px;
+  margin-top: 20px;
   border-radius: 10px;
   filter: drop-shadow(0 0 7px rgba(0,0,0,0.12));
   background-color: #c5c5c5;
-  background-image: url(../img/important.png);
   background-position: 20px center ;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 100px;
+  padding: 20px;
   transition: 300ms;
+}
+.caixa-destaque p {
+  color: #000;
 }
 .caixa-destaque:hover {
   transform: scale(1.1);
@@ -609,7 +625,7 @@ button * {
   pointer-events: none;
 }
 
-button::before {
+.video-container button::before {
   content: attr(data-title);
   position: absolute;
   display: none;
@@ -623,7 +639,7 @@ button::before {
   white-space: pre;
 }
 
-button:hover::before {
+.video-container button:hover::before {
   display: inline-block;
 }
 
